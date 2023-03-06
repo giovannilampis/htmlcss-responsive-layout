@@ -29,6 +29,7 @@ img {
 }
 
 .container {
+    max-width: 600px;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
@@ -112,9 +113,14 @@ header span ul li a {
     margin-bottom: 2rem;
 }
 
+/* #synthesis .container .card-synthesis i {
+    font-size: 1.5rem;
+} */
+
 #synthesis .container .card-synthesis h3 {
     color: var(--azure);
     text-align: center;
+    font-size: 2rem;
 }
 
 #synthesis .container .card-synthesis button {
@@ -128,10 +134,15 @@ header span ul li a {
     cursor: pointer;
 }
 
+#synthesis .container .card-synthesis p {
+    padding: 3rem;
+}
+
 .icon-big {
     color: var(--azure);
-    font-size: 5rem;
+    font-size: 7rem;
     text-align: center;
+    padding: 2rem 0;
 }
 
 /* PLANNING SECTION */
@@ -180,4 +191,33 @@ header span ul li a {
 
 footer {
     background-color: var(--footer-dark);
+}
+
+/* RESPONSIVE DESIGN */
+
+/* TABLET */
+
+@media screen and (min-width:480px) and (max-width:768px) {
+
+    .container {
+        max-width: 750px;
+    }
+
+    #synthesis .container .card-synthesis {
+        width: calc(100% / 3 - 6rem);
+    }
+
+    #synthesis .container .card-synthesis:first-child {
+        width: calc((100% / 3 - 3rem) * 2);
+    }
+}
+
+
+
+/* DESKTOP */
+
+@media screen and (min-width:992px) {
+    .container {
+        max-width: 974px;
+    }
 }
