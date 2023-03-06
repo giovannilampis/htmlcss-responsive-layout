@@ -6,7 +6,7 @@
     --dark-gray: #333333;
     --azure: #0084FD;
     --baby-blue: #B5DDFF;
-    --blue-magenta: #9792E4;
+    --magenta: #9792E4;
     --yellow-ocre: #FBC061;
 }
 
@@ -97,6 +97,38 @@ header span ul li a {
 
 
 /* MAIN */
+
+/* SYNTHESIS SECTION */
+
+.card-synthesis {
+    background-color: var(--baby-blue);
+}
+
+/* PLANNING SECTION */
+
+#planning {
+    background-color: var(--magenta);
+}
+
+/* PARTNERS SECTION */
+
+
+
+/* BENEFITS SECTION */
+
+#benefits {
+    background-color: var(--magenta);
+}
+
+/* ABOUT US SECTION */
+
+
+
+/* CALL TO ACTION SECTION */
+
+.cta {
+    background-color: var(--magenta);
+}
 
 
 /* FOOTER */
