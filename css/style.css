@@ -101,14 +101,20 @@ header span ul li a {
 
 /* SYNTHESIS SECTION */
 
+#synthesis {
+    padding: 4rem 0.5rem 4rem 0.5rem;
+}
+
 .card-synthesis {
     width: 100%;
     background-color: var(--baby-blue);
     border-radius: 1rem;
+    margin-bottom: 2rem;
 }
 
-#synthesis .container .card-synthesis h2 {
+#synthesis .container .card-synthesis h3 {
     color: var(--azure);
+    text-align: center;
 }
 
 #synthesis .container .card-synthesis button {
@@ -122,13 +128,34 @@ header span ul li a {
     cursor: pointer;
 }
 
+.icon-big {
+    color: var(--azure);
+    font-size: 5rem;
+    text-align: center;
+}
+
 /* PLANNING SECTION */
 
 #planning {
     background-color: var(--magenta);
+    padding: 6rem 2rem;
 }
 
-/* PARTNERS SECTION */
+#planning .container .card-planning:last-child {
+    background-color: var(--white);
+    border-radius: 5rem;
+}
+
+.arrow-planning {
+    padding: 1rem 1.25rem;
+    border-radius: 50%;
+    background-color: var(--magenta);  
+    display: inline-block;
+    color: var(--black);
+    margin: 2rem 0;
+}
+
+/* TESTIMONIALS SECTION */
 
 
 
