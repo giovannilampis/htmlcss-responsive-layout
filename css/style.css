@@ -1,13 +1,14 @@
 /* color variables */
 :root {
     --white: #FFFFFF;
-    --black: #000000;
+    --black: rgba(48, 48, 48, 0);
     --text-gray: #5a6e7f;
     --dark-gray: #333333;
-    --azure: #0084FD;
-    --baby-blue: #B5DDFF;
-    --magenta: #9792E4;
-    --yellow-ocre: #FBC061;
+    --azure: rgba(0, 132, 253, 0);
+    --baby-blue: rgba(181, 221, 255, 0);
+    --magenta: rgba(151, 146, 228, 0);
+    --yellow-ocre: rgba(253, 193, 95, 0);
+    --footer-dark: rgba(51, 51, 51, 0);
 }
 
 /* UTILITIES */
@@ -102,6 +103,11 @@ header span ul li a {
 
 .card-synthesis {
     background-color: var(--baby-blue);
+    border-radius: 1rem;
+}
+
+#synthesis .container .card-synthesis h3 {
+    color: var(--azure);
 }
 
 /* PLANNING SECTION */
@@ -132,3 +138,7 @@ header span ul li a {
 
 
 /* FOOTER */
+
+footer {
+    background-color: var(--footer-dark);
+}
