@@ -1,6 +1,13 @@
 /* color variables */
 :root {
-
+    --white: #FFFFFF;
+    --black: #000000;
+    --text-gray: #5a6e7f;
+    --dark-gray: #333333;
+    --azure: #0084FD;
+    --baby-blue: #B5DDFF;
+    --blue-magenta: #9792E4;
+    --yellow-ocre: #FBC061;
 }
 
 /* UTILITIES */
@@ -15,5 +22,6 @@
 /* GENERAL */
 
 body {
-    
+    background-color: var(--white);
+    font-family: 'PT Sans', sans-serif;
 }
