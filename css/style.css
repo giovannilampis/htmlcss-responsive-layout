@@ -1,14 +1,14 @@
 /* color variables */
+
 :root {
-    --white: #FFFFFF;
-    --black: rgba(48, 48, 48, 0);
-    --text-gray: #5a6e7f;
-    --dark-gray: #333333;
-    --azure: rgba(0, 132, 253, 0);
-    --baby-blue: rgba(181, 221, 255, 0);
-    --magenta: rgba(151, 146, 228, 0);
-    --yellow-ocre: rgba(253, 193, 95, 0);
-    --footer-dark: rgba(51, 51, 51, 0);
+    --white: #ffffff;
+    --black: rgba(48, 48, 48, 1);
+    --azure: rgba(0, 132, 253, 1);
+    --baby-blue: rgba(181, 221, 255, 1);
+    --magenta: rgba(151, 146, 228, 1);
+    --ocre: rgba(253, 193, 95, 1);
+    --footer-dark: rgba(51, 51, 51, 1);
+
 }
 
 /* UTILITIES */
@@ -62,7 +62,7 @@ header {
     background-color: var(--azure);
 }
 
-header > div {
+header div {
     padding: 1.5rem 2.5rem;
 }
 
@@ -102,12 +102,24 @@ header span ul li a {
 /* SYNTHESIS SECTION */
 
 .card-synthesis {
+    width: 100%;
     background-color: var(--baby-blue);
     border-radius: 1rem;
 }
 
-#synthesis .container .card-synthesis h3 {
+#synthesis .container .card-synthesis h2 {
     color: var(--azure);
+}
+
+#synthesis .container .card-synthesis button {
+    background-color: var(--azure);
+    color: var(--white);
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    letter-spacing: 0.2rem;
+    border: none;
+    cursor: pointer;
 }
 
 /* PLANNING SECTION */
