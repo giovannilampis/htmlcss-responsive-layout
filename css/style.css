@@ -213,6 +213,24 @@ header span ul li a {
 
 #benefits {
     background-color: var(--magenta);
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.card-benefit {
+    width: 100%;
+    background-color: var(--white);
+}
+
+.card-benefit h2,
+.card-benefit h3 {
+    color: var(--magenta);
+}
+
+.btn-benefit {
+    background-color: var(--magenta);
+    color: var(--white);
+    letter-spacing: 0.2rem;
 }
 
 /* ABOUT US SECTION */
@@ -242,8 +260,9 @@ footer {
         justify-content: space-between;
     }
 
-    .container {
+    #synthesis .container {
         gap: 1rem;
+        align-items: stretch;
     }
 
     .card-synthesis {
@@ -254,14 +273,18 @@ footer {
         width: calc((100% - 1rem) / 3 * 2);
     }
 
-    .container {
-        align-items: stretch;
-    }
-
     .card-testimonial {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    #benefits .container {
+        gap: 1rem;
+    }
+
+    #benefits .container .card-benefit {
+        width: calc((100% - 1rem) / 2);
     }
 }
 
@@ -297,5 +320,9 @@ footer {
         justify-content: space-between;
         align-items: center;
         gap: 5rem;
+    }
+
+    #benefits .container .card-benefit {
+        width: calc((100% - 2rem) / 3);
     }
 }
