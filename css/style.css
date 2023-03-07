@@ -87,6 +87,10 @@ header span:hover .hamburger-menu {
 }
 
 .hamburger-menu {
+    display: inline-block;
+}
+
+.open {
     list-style-type: none;
     color: var(--white);
     list-style-type: none;
@@ -200,12 +204,15 @@ header span ul li a {
     margin-bottom: 2rem;
 }
 
-
 #testimonials img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     margin: 1.5rem 0;
+}
+
+#testimonials .container p:first-child {
+    padding: 3rem 0 ;
 }
 
 /* BENEFITS SECTION */
@@ -272,8 +279,6 @@ header span ul li a {
     margin: 1.5rem 0;
 }
 
-
-
 /* CALL TO ACTION SECTION */
 
 #cta {
@@ -286,7 +291,6 @@ header span ul li a {
 #cta a {
     color: var(--white);
 }
-
 
 /* FOOTER */
 
@@ -307,6 +311,7 @@ footer .container-1000 {
 footer .container-1000 div {
     padding-top: 6rem;
 }
+
 
 /* RESPONSIVE DESIGN */
 
@@ -345,12 +350,12 @@ footer .container-1000 div {
         width: calc((100% - 2rem) / 2);
     }
 
-    #about-us .container .text-about-us {
+    .text-about-us {
         width: 70%;
     }
 
-    #about-us .container .image-about-us {
-        width: 30;
+    .image-about-us {
+        width: 30%;
     }
 
 }
@@ -359,20 +364,24 @@ footer .container-1000 div {
 
 @media screen and (min-width:992px) {
 
-    .open {
+    /* nav */
+
+    .hamburger-menu {
         display: none;
     }
 
-    .hamburger-menu {
-        display: block;
+    .open {
+        display: flex;
+    }
+
+    /* section 1 */
+    
+    .card-synthesis img {
+        width: 30%;
     }
 
     .text-card {
         width: 70%;
-    }
-    
-    .card-synthesis img {
-        width: 30%;
     }
 
     .card-synthesis:first-child {
@@ -381,6 +390,8 @@ footer .container-1000 div {
         align-items: center;
         gap: 1rem;
     }
+
+    /* section 2 */
 
     #planning .container {
         display: flex;
