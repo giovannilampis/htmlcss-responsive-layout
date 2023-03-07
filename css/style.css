@@ -321,14 +321,39 @@ header span ul li a {
     text-align: center;
 }
 
-#cta a {
-    color: var(--white);
+#cta h3 {
+    font-size: 3rem;
+    padding-bottom: 1.5rem;
 }
 
 .btn-cta {
     background-color: var(--white);
     color: var(--magenta);
+}
+
+#cta p:first-child {
+    font-size: 1.5rem;
+    padding: 3rem 0 1.5rem 0;
+}
+
+#cta p:nth-of-type(2) {
+    font-size: 1.7rem;
+    line-height: 140%;
     margin: 3rem 0;
+}
+
+#cta p:last-child {
+    margin-top: 3rem;
+}
+
+#cta a:last-child {
+    color: var(--white);
+}
+
+.free-orange {
+    color: var(--ocre);
+    font-size: 6rem;
+    font-weight: bold;
 }
 
 /* FOOTER */
