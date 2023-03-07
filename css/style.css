@@ -197,18 +197,19 @@ footer {
 
 /* TABLET */
 
-@media screen and (min-width:480px) and (max-width:768px) {
+@media screen and (min-width:569px) and (max-width:779px) {
 
     .container {
         max-width: 750px;
+        gap: 1rem;
     }
 
     #synthesis .container .card-synthesis {
-        width: calc(100% / 3 - 6rem);
+        width: calc((100% - 2rem) / 3);
     }
 
     #synthesis .container .card-synthesis:first-child {
-        width: calc((100% / 3 - 3rem) * 2);
+        width: calc((100% - 1rem) / 3 * 2);
     }
 }
 
@@ -216,7 +217,7 @@ footer {
 
 /* DESKTOP */
 
-@media screen and (min-width:992px) {
+@media screen and (min-width:780px) {
     .container {
         max-width: 974px;
     }
