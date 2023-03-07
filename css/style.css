@@ -168,6 +168,21 @@ header span ul li a {
 
 /* TESTIMONIALS SECTION */
 
+.card-testimonial {
+    background-color: var(--magenta);
+    color: var(--white);
+    border-radius: 5rem;
+    margin-bottom: 2rem;
+}
+
+
+#testimonials img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 1.5rem 0;
+}
+
 
 
 /* BENEFITS SECTION */
@@ -210,6 +225,12 @@ footer {
 
     #synthesis .container .card-synthesis:first-child {
         width: calc((100% - 1rem) / 3 * 2);
+    }
+
+    .card-testimonial {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
