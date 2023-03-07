@@ -8,7 +8,6 @@
     --magenta: rgba(151, 146, 228, 1);
     --ocre: rgba(253, 193, 95, 1);
     --footer-dark: rgba(51, 51, 51, 1);
-
 }
 
 /* UTILITIES */
@@ -26,10 +25,11 @@
 
 img {
     width: 100%;
+    display: block;
 }
 
 .container {
-    max-width: 600px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
@@ -68,7 +68,7 @@ header {
     z-index: 1000;
 }
 
-header div {
+header nav {
     padding: 1.5rem 2.5rem;
 }
 
@@ -108,27 +108,29 @@ header span ul li a {
 /* SYNTHESIS SECTION */
 
 #synthesis {
-    padding: 4rem 0.5rem 4rem 0.5rem;
+    padding: 2.5rem;
 }
 
 .card-synthesis {
     width: 100%;
     background-color: var(--baby-blue);
+    line-height: 140%;
     border-radius: 1rem;
     margin-bottom: 2rem;
+    padding: 1.5rem;
 }
 
 /* #synthesis .container .card-synthesis i {
     font-size: 1.5rem;
 } */
 
-#synthesis .container .card-synthesis h3 {
+.card-synthesis h3 {
     color: var(--azure);
     text-align: center;
     font-size: 2rem;
 }
 
-#synthesis .container .card-synthesis button {
+.card-synthesis button {
     background-color: var(--azure);
     color: var(--white);
     font-weight: bold;
@@ -221,22 +223,25 @@ footer {
 
 /* TABLET */
 
-@media screen and (min-width:569px) {
+@media screen and (min-width:768px) {
+
+    #synthesis div {
+        justify-content: space-between;
+    }
 
     .container {
-        max-width: 750px;
         gap: 1rem;
     }
 
-    #synthesis .container .card-synthesis {
+    .card-synthesis {
         width: calc((100% - 2rem) / 3);
     }
 
-    #synthesis .container .card-synthesis:first-child {
+    .card-synthesis:first-child {
         width: calc((100% - 1rem) / 3 * 2);
     }
 
-    #synthesis .container {
+    .container {
         align-items: stretch;
     }
 
@@ -249,20 +254,25 @@ footer {
 
 /* DESKTOP */
 
-@media screen and (min-width:780px) {
-    .container {
-        max-width: 780px;
+@media screen and (min-width:992px) {
+
+    .open {
+        display: none;
     }
 
-    #synthesis .card-synthesis .text-card {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .text-card {
         width: 60%;
     }
     
-    #synthesis .card-synthesis img {
+    .card-synthesis img {
         width: 40%;
     }
 
-    #synthesis .card-synthesis:first-child {
+    .card-synthesis:first-child {
         display: flex;
         justify-content: space-between;
         align-items: center;
