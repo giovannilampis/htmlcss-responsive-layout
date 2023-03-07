@@ -180,9 +180,17 @@ header span ul li a {
     display: inline-block;
     color: var(--black);
     margin: 2rem 0;
+    text-align: center;
+    height: 3rem;
+    line-height: 3rem;
 }
 
 /* TESTIMONIALS SECTION */
+
+#testimonials {
+    padding: 2.5rem;
+    text-align: center;
+}
 
 .card-testimonial {
     background-color: var(--magenta);
