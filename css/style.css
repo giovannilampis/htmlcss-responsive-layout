@@ -34,6 +34,12 @@ img {
     padding: 0 1.5rem;
 }
 
+.container-1000 {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
 .flex {
     display: flex;
 }
@@ -154,11 +160,6 @@ header span ul li a {
 
 /* PLANNING SECTION */
 
-.container-1000 {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
 #planning {
     background-color: var(--magenta);
     padding: 6rem 2rem;
@@ -235,12 +236,31 @@ header span ul li a {
 
 /* ABOUT US SECTION */
 
+.text-about-us,
+.image-about-us {
+    width: 100%;
+}
+
+#about-us img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 1.5rem 0;
+}
+
 
 
 /* CALL TO ACTION SECTION */
 
-.cta {
+#cta {
     background-color: var(--magenta);
+    color: var(--white);
+    padding: 2.5rem;
+    text-align: center;
+}
+
+#cta a {
+    color: var(--white);
 }
 
 
@@ -248,6 +268,20 @@ header span ul li a {
 
 footer {
     background-color: var(--footer-dark);
+    color: var(--white);
+}
+
+footer a {
+    color: var(--magenta);
+}
+
+footer .container-1000 {
+    padding: 4rem;
+    text-align: center;
+}
+
+footer .container-1000 div {
+    padding-top: 6rem;
 }
 
 /* RESPONSIVE DESIGN */
@@ -279,13 +313,22 @@ footer {
         align-items: center;
     }
 
-    #benefits .container {
-        gap: 1rem;
+    #benefits .container div.flex {
+        gap: 2rem;
     }
 
     #benefits .container .card-benefit {
-        width: calc((100% - 1rem) / 2);
+        width: calc((100% - 2rem) / 2);
     }
+
+    #about-us .container .text-about-us {
+        width: 70%;
+    }
+
+    #about-us .container .image-about-us {
+        width: 30;
+    }
+
 }
 
 /* DESKTOP */
@@ -301,11 +344,11 @@ footer {
     }
 
     .text-card {
-        width: 60%;
+        width: 70%;
     }
     
     .card-synthesis img {
-        width: 40%;
+        width: 30%;
     }
 
     .card-synthesis:first-child {
@@ -323,6 +366,6 @@ footer {
     }
 
     #benefits .container .card-benefit {
-        width: calc((100% - 2rem) / 3);
+        width: calc((100% - 4rem) / 3);
     }
 }
