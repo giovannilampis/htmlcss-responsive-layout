@@ -154,6 +154,11 @@ header span ul li a {
 
 /* PLANNING SECTION */
 
+.container-1000 {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 #planning {
     background-color: var(--magenta);
     padding: 6rem 2rem;
