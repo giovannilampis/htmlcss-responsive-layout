@@ -61,6 +61,11 @@ body {
 
 header {
     background-color: var(--azure);
+    color: var(--white);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header div {
@@ -152,6 +157,10 @@ header span ul li a {
     padding: 6rem 2rem;
 }
 
+#planning .card-planning:first-child {
+    color: var(--white);
+}
+
 #planning .container .card-planning:last-child {
     background-color: var(--white);
     border-radius: 5rem;
@@ -240,6 +249,13 @@ footer {
 
 @media screen and (min-width:780px) {
     .container {
-        max-width: 974px;
+        max-width: 780px;
+    }
+
+    #planning .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5rem;
     }
 }
