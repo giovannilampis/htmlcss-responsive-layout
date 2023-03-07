@@ -221,7 +221,7 @@ footer {
 
 /* TABLET */
 
-@media screen and (min-width:569px) and (max-width:779px) {
+@media screen and (min-width:569px) {
 
     .container {
         max-width: 750px;
@@ -236,6 +236,10 @@ footer {
         width: calc((100% - 1rem) / 3 * 2);
     }
 
+    #synthesis .container {
+        align-items: stretch;
+    }
+
     .card-testimonial {
         display: flex;
         justify-content: space-between;
@@ -243,13 +247,26 @@ footer {
     }
 }
 
-
-
 /* DESKTOP */
 
 @media screen and (min-width:780px) {
     .container {
         max-width: 780px;
+    }
+
+    #synthesis .card-synthesis .text-card {
+        width: 60%;
+    }
+    
+    #synthesis .card-synthesis img {
+        width: 40%;
+    }
+
+    #synthesis .card-synthesis:first-child {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
     }
 
     #planning .container {
