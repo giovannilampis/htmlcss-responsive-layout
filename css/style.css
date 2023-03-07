@@ -208,24 +208,48 @@ header span ul li a {
     margin: 1.5rem 0;
 }
 
-
-
 /* BENEFITS SECTION */
 
 #benefits {
     background-color: var(--magenta);
     padding: 2.5rem;
+}
+
+#benefits .container > h2 {
+    color: var(--white);
+    padding-bottom: 2.5rem;
+    font-size: 3.5rem;
     text-align: center;
 }
 
 .card-benefit {
     width: 100%;
     background-color: var(--white);
+    padding: 2rem 3rem;
+    line-height: 140%;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    text-align: left;
 }
 
 .card-benefit h2,
 .card-benefit h3 {
     color: var(--magenta);
+}
+
+.card-benefit h2 {
+    font-size: 4rem;
+    padding: 1rem 0 3rem 0;
+}
+
+.card-benefit h3 {
+    font-size: 2rem;
+}
+
+.card-benefit p {
+    padding: 3rem 0;
+    color: grey;
+    font-size: 1.5rem;
 }
 
 .btn-benefit {
