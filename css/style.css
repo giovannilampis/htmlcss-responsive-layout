@@ -23,6 +23,23 @@
     border: 0.1rem solid red;
 }
 
+/* GENERAL */
+
+body {
+    background-color: var(--white);
+    font-family: 'PT Sans', sans-serif;
+}
+
+.btn {
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    height: 2.5rem;  
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 img {
     width: 100%;
     display: block;
@@ -54,13 +71,6 @@ img {
 
 .wrap {
     flex-wrap: wrap;
-}
-
-/* GENERAL */
-
-body {
-    background-color: var(--white);
-    font-family: 'PT Sans', sans-serif;
 }
 
 /* HEADER */
@@ -103,16 +113,6 @@ header span ul li a {
     color: var(--black);
 }
 
-.btn {
-    border: none;
-    padding: 1rem 2rem;
-    border-radius: 3rem;
-    height: 2.5rem;  
-    font-weight: bold;
-    cursor: pointer;
-    text-decoration: none;
-}
-
 .btn-nav {
     background-color: var(--white);
     color: var(--black);
@@ -141,26 +141,24 @@ header span ul li a {
     padding: 1.5rem;
 }
 
+.card-synthesis img {
+    display: block;
+}
+
 /* #synthesis .container .card-synthesis i {
     font-size: 1.5rem;
 } */
 
-.card-synthesis h3 {
+.text-card h3 {
     color: var(--azure);
-    text-align: center;
+    text-align: left;
     font-size: 2rem;
 }
 
-.card-synthesis button {
-    background-color: var(--azure);
-    color: var(--white);
-    font-weight: bold;
-    padding: 1rem 2rem;
-    border-radius: 3rem;
-    letter-spacing: 0.2rem;
-    border: none;
-    cursor: pointer;
-}
+/* .text-card {
+    text-align: left;
+    padding: 2rem 0 4rem 0;
+} */
 
 #synthesis .container .card-synthesis p {
     padding: 3rem;
@@ -415,11 +413,12 @@ footer .container-1000 div {
     }
 
     .text-about-us {
-        width: 60%;
+        width: 65%;
+        padding-right: 5rem;
     }
 
     .image-about-us {
-        width: 40%;
+        width: 35%;
     }
 
 }
