@@ -183,6 +183,10 @@ header span ul li a {
     text-align: center;
 }
 
+.card-synthesis h3:not(:first-child) {
+    padding-bottom: 1.5rem;
+}
+
 .card-synthesis p {
     text-align: center;
 }
