@@ -1,3 +1,5 @@
+                         /* UTILITIES */
+
 /* color variables */
 
 :root {
@@ -10,25 +12,28 @@
     --footer-dark: rgba(51, 51, 51, 1);
 }
 
-/* UTILITIES */
-
 /* reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* debub utility */
+
 .debug {
     border: 0.1rem solid red;
 }
 
-/* GENERAL */
+                            /* GENERAL */
 
 body {
     background-color: var(--white);
     font-family: 'PT Sans', sans-serif;
 }
+
+/* button like general layout */
 
 .btn {
     border: none;
@@ -40,10 +45,14 @@ body {
     text-decoration: none;
 }
 
+/* images */
+
 img {
     width: 100%;
     display: block;
 }
+
+/* display flex classes */
 
 .container {
     max-width: 1200px;
@@ -73,7 +82,7 @@ img {
     flex-wrap: wrap;
 }
 
-/* HEADER */
+                            /* HEADER */
 
 header {
     background-color: var(--azure);
@@ -86,6 +95,23 @@ header {
 
 header nav {
     padding: 1.5rem 2.5rem;
+}
+
+header nav ul li {
+    margin: 0 0.6rem;
+}
+
+header nav ul li:first-child {
+    margin-left: 0;
+}
+
+header nav ul li:last-child {
+    margin-right: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--white);
 }
 
 header span i {
@@ -124,7 +150,7 @@ header span ul li a {
     letter-spacing: 0.2rem;
 }
 
-/* MAIN */
+                            /* MAIN */
 
 /* SYNTHESIS SECTION */
 
@@ -141,27 +167,33 @@ header span ul li a {
     padding: 1.5rem;
 }
 
+.card-synthesis:first-child {
+    padding-bottom: 0;
+}
+
 .card-synthesis img {
+    padding-top: 3rem;
     display: block;
 }
 
-/* #synthesis .container .card-synthesis i {
-    font-size: 1.5rem;
-} */
-
-.text-card h3 {
+.card-synthesis h3 {
     color: var(--azure);
     text-align: left;
     font-size: 2rem;
+    text-align: center;
 }
 
-/* .text-card {
-    text-align: left;
-    padding: 2rem 0 4rem 0;
-} */
+.card-synthesis p {
+    text-align: center;
+}
 
-#synthesis .container .card-synthesis p {
-    padding: 3rem;
+.card-synthesis .text-card p {
+    padding: 1.5rem 0 3rem 0;
+}
+
+.card-synthesis .text-card h3,
+.card-synthesis .text-card p {
+    text-align: left;
 }
 
 .icon-big {
@@ -310,7 +342,7 @@ header span ul li a {
     padding-bottom: 2.5rem;
 }
 
-/* CALL TO ACTION SECTION */
+/* CTA aka CALL TO ACTION SECTION */
 
 #cta {
     background-color: var(--magenta);
@@ -354,7 +386,7 @@ header span ul li a {
     font-weight: bold;
 }
 
-/* FOOTER */
+                        /* FOOTER */
 
 footer {
     background-color: var(--footer-dark);
@@ -375,7 +407,7 @@ footer .container-1000 div {
 }
 
 
-/* RESPONSIVE DESIGN */
+                        /* RESPONSIVE DESIGN */
 
 /* TABLET */
 
