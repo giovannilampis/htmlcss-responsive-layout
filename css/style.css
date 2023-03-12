@@ -39,7 +39,7 @@ body {
     border: none;
     padding: 1rem 2rem;
     border-radius: 3rem;
-    height: 2.5rem;  
+    height: 2.5rem;
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
@@ -252,7 +252,7 @@ header span ul li a {
 
 .arrow-planning {
     background-color: var(--magenta);
-    color: var(--black);  
+    color: var(--black);
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
@@ -429,33 +429,15 @@ header span ul li a {
     text-align: center;
 }
 
+#cta h5 {
+    font-size: 1.1rem;
+    padding: 3rem 0 1.5rem 0;
+    font-weight: 200;
+}
+
 #cta h3 {
     font-size: 3rem;
     padding-bottom: 1.5rem;
-}
-
-.btn-cta {
-    background-color: var(--white);
-    color: var(--magenta);
-}
-
-#cta p:first-child {
-    font-size: 1.5rem;
-    padding: 3rem 0 1.5rem 0;
-}
-
-#cta p:nth-of-type(2) {
-    font-size: 1.7rem;
-    line-height: 140%;
-    margin: 3rem 0;
-}
-
-#cta p:last-child {
-    margin-top: 3rem;
-}
-
-#cta a:last-child {
-    color: var(--white);
 }
 
 .free-orange {
@@ -463,6 +445,36 @@ header span ul li a {
     font-size: 6rem;
     font-weight: bold;
 }
+
+#cta p {
+    font-size: 1.4rem;
+    line-height: 140%;
+    margin: 3rem 0;
+}
+
+#cta button {
+    background-color: var(--white);
+    color: var(--magenta);
+    width: 16.5rem;
+    height: 4rem;
+    font-size: 1.1rem;
+    font-weight: 800;
+    letter-spacing: 0.2rem;
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+    margin-bottom: 2.5rem;
+}
+
+#cta i {
+    font-size: 0.4rem;
+    margin-right: 0.5rem;
+}
+
+#cta a {
+    color: var(--white);
+}
+
 
                         /* FOOTER */
 
@@ -548,7 +560,7 @@ footer .container-1000 div {
     }
 
     /* section 1 */
-    
+
     .card-synthesis img {
         width: 30%;
     }
@@ -566,14 +578,21 @@ footer .container-1000 div {
 
     /* section 2 */
 
-    #planning .container {
+    #planning div.justify-between {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
         gap: 5rem;
     }
+
+    #planning,
+    #benefits,
+    #testimonials {
+        padding-bottom: 1rem;
+    }
+
+      /* section 4 */
 
     #benefits .container .card-benefit {
         width: calc((100% - 4rem) / 3);
     }
+
 }
