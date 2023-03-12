@@ -367,7 +367,7 @@ header span ul li a {
 /* ABOUT US SECTION */
 
 #about-us {
-    padding: 7rem 1.5rem 5rem 1.5rem;
+    padding: 4.5rem 1.5rem 7rem 1.5rem;
     line-height: 160%;
 }
 
@@ -384,6 +384,11 @@ header span ul li a {
 .text-about-us,
 .image-about-us {
     width: 100%;
+    letter-spacing: 0;
+}
+
+.image-about-us i {
+    padding-right: 0.5rem;
 }
 
 #about-us img {
