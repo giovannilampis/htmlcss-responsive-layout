@@ -266,7 +266,21 @@ header span ul li a {
 
 #testimonials {
     padding: 2.5rem;
+}
+
+.testimonials-text {
     text-align: center;
+    padding-bottom: 2rem;
+}
+
+.testimonials-text h3 {
+    color: var(--magenta);
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.testimonials-text h5 {
+    font-weight: 400;
 }
 
 .card-testimonial {
@@ -274,17 +288,30 @@ header span ul li a {
     color: var(--white);
     border-radius: 5rem;
     margin-bottom: 2rem;
+    padding-left: 1.5rem;
 }
 
-#testimonials img {
+.card-testimonial img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     margin: 1.5rem 0;
 }
 
-#testimonials .container p:first-child {
-    padding: 3rem 0 ;
+.card-testimonial p {
+    padding-bottom: 1.5rem;
+}
+
+.card-testimonial .fa-quote-left {
+    padding-right: 0.5rem;
+}
+
+.card-testimonial .fa-quote-right {
+    padding-left: 0.5rem;
+}
+
+.testimonial-card-text {
+    padding: 0 1.5rem;
 }
 
 /* BENEFITS SECTION */
