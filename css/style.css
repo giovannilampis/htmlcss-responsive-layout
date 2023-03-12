@@ -383,26 +383,41 @@ header span ul li a {
 
 .text-about-us,
 .image-about-us {
-    width: 100%;
-    letter-spacing: 0;
+    padding: 0.5rem;
+}
+
+.container-image-about-us {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.container-image-about-us i {
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    color: var(--magenta);
+    font-size: 4rem;
 }
 
 .image-about-us i {
     padding-right: 0.5rem;
 }
 
-#about-us img {
+.container-image-about-us img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     margin: 1.5rem 0;
 }
 
-#about-us h3 {
+.image-about-us h3 {
     color: var(--magenta);
     font-size: 3rem;
     line-height: 140%;
     padding-bottom: 2.5rem;
+}
+.image-about-us a {
+    letter-spacing: 0;
 }
 
 /* CTA aka CALL TO ACTION SECTION */
