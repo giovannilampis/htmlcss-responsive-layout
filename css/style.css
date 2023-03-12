@@ -595,4 +595,15 @@ footer .container-1000 div {
         width: calc((100% - 4rem) / 3);
     }
 
+    /* FOOTER */
+
+    footer .container-1000 {
+        padding: 1.5rem 4rem;
+        text-align: center;
+    }
+    
+    footer .container-1000 div {
+        padding-top: 3rem;
+    }
+
 }
