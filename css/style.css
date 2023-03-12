@@ -218,21 +218,48 @@ header span ul li a {
     color: var(--white);
 }
 
-#planning .container .card-planning:last-child {
+#planning .card-planning:first-child p {
+    line-height: 160%;
+    padding-bottom: 2rem;
+}
+
+.card-planning h2 {
+    font-size: 3rem;
+    padding: 6rem 0 2.5rem 0;
+}
+
+#planning h4 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 2rem;
+}
+
+#planning .card-planning:last-child {
     background-color: var(--white);
-    border-radius: 5rem;
+    border-radius: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+
+#planning .card-planning:last-child img {
+    padding: 2rem 2rem;
+}
+
+#planning .card-planning:last-child p {
+    text-align: center;
+    padding: 0 2rem 3rem 2rem;
 }
 
 .arrow-planning {
-    padding: 1rem 1.25rem;
+    background-color: var(--magenta);
+    color: var(--black);  
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
-    background-color: var(--magenta);  
-    display: inline-block;
-    color: var(--black);
-    margin: 2rem 0;
-    text-align: center;
     height: 3rem;
     line-height: 3rem;
+    text-align: center;
+    margin: 0 auto;
 }
 
 /* TESTIMONIALS SECTION */
