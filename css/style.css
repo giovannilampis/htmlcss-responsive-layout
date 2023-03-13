@@ -563,11 +563,11 @@ footer .container-1000 div {
     /* section 1 */
 
     .card-synthesis img {
-        width: 30%;
+        width: 40%;
     }
 
     .text-card {
-        width: 70%;
+        width: 60%;
     }
 
     .card-synthesis:first-child {
